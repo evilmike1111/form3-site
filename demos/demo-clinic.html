@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src data:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'">
+  <title>安序 ANSHU｜復健診所預約流程示意</title>
+  <meta name="description" content="安序 ANSHU 復健診所虛構品牌示意頁：了解服務、選擇時段及預覽到診準備事項。">
+  <style>
+    :root{--paper:#F7F6F2;--ink:#3B3936;--accent:#45665F;--accent-soft:#E8EFEB;--line:#C7CCC6;--quiet:#565D58;--white:#fff;--gutter:clamp(20px,4.2%,64px);--type:16px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:var(--type)/1.65 system-ui,-apple-system,"Segoe UI","Noto Sans TC",sans-serif}button,input,textarea{font:inherit}button{cursor:pointer}a{color:inherit}a:hover{color:var(--accent)}:focus-visible{outline:3px solid var(--accent);outline-offset:3px}::selection{background:#C9DDD3;color:var(--ink)}[hidden]{display:none!important}
+    .shell{width:min(100% - 40px,1700px);margin-inline:auto}.skip{position:absolute;left:16px;top:-80px;z-index:30;padding:10px 16px;background:var(--accent);color:var(--white)}.skip:focus{top:12px}
+    .topbar{border-bottom:1px solid var(--line)}.topbar-inner{min-height:84px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:inline-flex;gap:10px;align-items:baseline;text-decoration:none;font-size:23px;font-weight:700;letter-spacing:.02em;white-space:nowrap;color:var(--accent)}.brand span+span{font-size:inherit;letter-spacing:inherit}.top-right{display:flex;align-items:center;gap:32px}.top-right a{font-weight:600;text-decoration:none}.language{display:flex;gap:4px;border:1px solid var(--line);padding:3px;border-radius:50px}.language button{border:0;background:transparent;color:var(--ink);padding:5px 9px;border-radius:50px;min-width:42px;font-weight:700}.language button[aria-pressed=true]{background:var(--accent);color:var(--white)}
+    .layout{display:grid;grid-template-columns:minmax(230px,278px) minmax(0,1fr);gap:clamp(44px,5%,100px);padding-block:36px 110px}.rail{align-self:start;position:sticky;top:28px;max-height:calc(100vh - 56px);overflow:auto;padding:10px 26px 20px 0;border-right:1px solid var(--line)}.rail-kicker,.eyebrow,.section-no,.field-note,.day-name{font-size:14px;letter-spacing:.08em;font-weight:700}.rail-kicker,.eyebrow,.section-no{color:var(--accent)}.rail nav{display:grid;margin:30px 0 46px}.rail nav a{padding:11px 0;border-bottom:1px solid var(--line);text-decoration:none;font-weight:600}.rail nav a:hover{text-decoration:underline}.rail-title{margin:0 0 13px;font-size:18px;font-weight:700}.rail-summary{padding-top:21px;border-top:2px solid var(--accent);font-size:15px;line-height:1.8}.rail-summary strong{display:block;margin-top:7px;font-size:20px;line-height:1.4;color:var(--accent)}.rail-note{font-size:14px;color:var(--quiet)}
+    main{min-width:0}.hero{padding:8px 0 35px;border-bottom:1px solid var(--line)}.hero-top{display:flex;align-items:center;justify-content:space-between;gap:20px}.hero-mark{display:flex;align-items:center;gap:9px;color:var(--accent);font-size:14px;font-weight:700;letter-spacing:.1em}.hero-mark svg{width:24px;height:24px}.hero h1{max-width:18em;margin:18px 0 14px;font-size:44px;font-weight:650;letter-spacing:-.045em;line-height:1.22}.hero p{max-width:690px;margin:0 0 18px;font-size:18px;line-height:1.8}.hero-actions{display:flex;align-items:center;gap:22px;flex-wrap:wrap}.button-primary,.button-secondary{border:1px solid var(--accent);border-radius:3px;padding:12px 22px;min-height:48px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:14px}.button-primary{background:var(--accent);color:var(--white)}.button-primary:hover{background:#34544D;color:var(--white)}.button-secondary{background:transparent;color:var(--accent)}.button-secondary:hover{background:var(--accent-soft)}.hero-meta{font-size:14px;color:var(--quiet)}
+    .chapter{display:grid;grid-template-columns:84px minmax(0,1fr);border-bottom:1px solid var(--line);padding-block:40px 72px;scroll-margin-top:18px}.chapter-body{min-width:0}.chapter h2{margin:0 0 15px;font-size:clamp(28px,38px,40px);line-height:1.3;letter-spacing:-.03em}.chapter-lead{max-width:700px;margin:0 0 22px;font-size:17px;color:var(--quiet)}.section-no{padding-top:11px}
+    .schedule{border-top:2px solid var(--accent)}.schedule-head{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:16px 0;border-bottom:1px solid var(--line)}.schedule-head strong{font-size:19px}.week-controls{display:flex;gap:8px}.week-controls button{width:42px;height:42px;background:transparent;border:1px solid var(--line);color:var(--accent);font-size:23px;line-height:1}.week-controls button:hover:not(:disabled){background:var(--accent-soft)}.week-controls button:disabled{opacity:.38;cursor:not-allowed}.calendar{display:grid;grid-template-columns:repeat(7,minmax(0,1fr))}.day{min-width:0;min-height:215px;border-right:1px solid var(--line);padding:15px 8px 12px}.day:first-child{border-left:1px solid var(--line)}.day-name{display:block;color:var(--quiet)}.day-date{display:block;font-size:24px;font-weight:650;line-height:1.3;margin:2px 0 18px}.slot{display:block;width:100%;padding:10px 4px;margin:0 0 8px;border:1px solid var(--line);border-radius:2px;background:transparent;color:var(--accent);font-size:15px;font-weight:700;line-height:1.3}.slot:hover{background:var(--accent-soft)}.slot[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:var(--white)}.closed{margin:4px 0;font-size:14px;color:var(--quiet)}.calendar-hint{font-size:14px;color:var(--quiet);margin:14px 0 30px}.form-heading{font-size:21px;font-weight:700;margin:0 0 15px}.form-fields{display:grid;grid-template-columns:1fr 1fr;gap:18px}.field{display:flex;flex-direction:column;gap:7px}.field.wide{grid-column:1/-1}.field label{font-weight:700}.field input,.field textarea{border:1px solid #858D86;background:var(--white);border-radius:2px;padding:12px 14px;color:var(--ink);min-width:0}.field textarea{min-height:110px;resize:vertical}.field input:focus,.field textarea:focus{border-color:var(--accent)}.field-note{color:var(--quiet);letter-spacing:0;font-weight:400}.form-footer{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-top:20px}.form-footer p{margin:0;color:var(--quiet);font-size:14px}.form-error{margin:12px 0 0;color:#8A3434;font-weight:700}.result{border:1px solid var(--accent);background:var(--accent-soft);padding:24px;margin-top:28px}.result h3{margin:0 0 12px;font-size:23px}.result p{margin:7px 0}.result .prepared{margin-top:19px;padding-top:17px;border-top:1px solid var(--line)}.prepared ul{margin:8px 0 0;padding-left:1.4em}.result small{font-size:14px}
+    .service-list{border-top:2px solid var(--accent)}.service{border-bottom:1px solid var(--line)}.service button,.faq button{display:flex;width:100%;align-items:center;gap:12px;border:0;background:transparent;color:var(--ink);text-align:left;padding:20px 4px}.service button:hover,.faq button:hover{color:var(--accent)}.service-index{font-size:14px;color:var(--accent);font-weight:700;min-width:38px}.service-name{font-size:19px;font-weight:700;flex:1}.service-brief{font-size:15px;color:var(--quiet);margin-right:20px}.expand-icon{font-size:25px;line-height:1;color:var(--accent)}[aria-expanded=true] .expand-icon{transform:rotate(45deg)}.service-panel,.faq-panel{padding:0 48px 19px;color:var(--quiet);max-width:750px}.service-panel p,.faq-panel p{margin:0}
+    .steps{position:relative;list-style:none;margin:7px 0 0;padding:0 0 0 35px;border-left:1px solid var(--accent)}.steps li{position:relative;padding:0 0 40px 28px}.steps li:last-child{padding-bottom:0}.steps li::before{content:"";position:absolute;left:-42px;top:7px;width:13px;height:13px;border:2px solid var(--accent);border-radius:50%;background:var(--paper)}.step-num{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.08em}.steps h3{margin:2px 0 5px;font-size:21px}.steps p{margin:0;color:var(--quiet)}.faq{border-top:2px solid var(--accent)}.faq-item{border-bottom:1px solid var(--line)}.faq button{font-size:18px;font-weight:700}.faq button span:first-child{flex:1}.faq-panel{padding-left:4px}
+    .footer{border-top:1px solid var(--line);padding:30px 0 28px}.footer-row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.footer a{text-decoration:none;font-weight:700}.footer p{margin:11px 0 0;color:var(--quiet);font-size:14px}.demo-tag{border-top:1px solid var(--line);padding:15px 20px;text-align:center;color:var(--quiet);font-size:14px}
+    @media(min-width:2381px){:root{--type:19px}.shell{width:min(100% - 120px,1700px)}.layout{grid-template-columns:300px minmax(0,1fr)}.rail-summary{font-size:17px}.rail-note,.rail-kicker,.eyebrow,.section-no,.field-note,.day-name,.hero-mark,.hero-meta,.calendar-hint,.form-footer p,.footer p,.demo-tag,.service-index,.closed,.step-num,.result small{font-size:16px}.service-brief{font-size:17px}.hero h1{font-size:52px}.hero p{font-size:23px}.chapter h2{font-size:44px}.chapter-lead{font-size:20px}.slot{font-size:17px}.service-name,.faq button{font-size:21px}}
+    @media(max-width:1050px){.layout{grid-template-columns:205px minmax(0,1fr);gap:34px}.chapter{grid-template-columns:64px minmax(0,1fr)}.calendar{grid-template-columns:repeat(7,minmax(90px,1fr))}.day{border-bottom:1px solid var(--line)}.day:nth-child(5){border-left:1px solid var(--line)}}
+    @media(max-width:720px){.topbar-inner{min-height:72px}.top-right{gap:13px}.top-right>a{display:none}.brand{font-size:19px}.brand span+span{font-size:inherit}.layout{display:block;padding-block:23px 70px}.rail{position:static;max-height:none;overflow:visible;border:0;border-bottom:1px solid var(--line);padding:0 0 18px;margin-bottom:30px}.rail-kicker{display:none}.rail nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 14px;overflow:visible;margin:0 0 18px;white-space:normal}.rail nav a{padding:8px 0}.rail-summary{padding-top:12px}.rail-title{font-size:15px;margin-bottom:2px}.rail-summary strong{font-size:17px}.rail-note{margin:4px 0}.hero{padding-bottom:37px}.hero h1{font-size:32px;margin:18px 0 14px}.hero p{font-size:17px}.chapter{display:block;padding-block:42px 56px}.section-no{display:block;margin-bottom:12px}.calendar{grid-template-columns:repeat(7,minmax(90px,1fr))}.day{min-height:155px}.day:nth-child(odd){border-left:1px solid var(--line)}.day:nth-child(5){border-left:1px solid var(--line)}.day-date{margin-bottom:11px}.form-fields{grid-template-columns:1fr}.service-brief{display:none}.service-panel{padding-left:42px}.schedule-head strong{font-size:16px}.week-controls button{width:40px;height:40px}.footer-row{display:block}.footer-row a{display:inline-block;margin-top:14px}}
+    /* The weekly grid scrolls within its own region on narrow screens. */
+    .calendar-viewport{overflow-x:auto;overscroll-behavior-inline:contain;padding:4px;margin:-4px;scroll-margin-top:20px}
+    .calendar{grid-template-columns:repeat(7,minmax(90px,1fr))}
+    .day{border-left:0!important;border-bottom:0}.day:first-child{border-left:1px solid var(--line)!important}
+    .day-heading{margin:0;font-size:inherit}.slot{min-height:44px}.slot[aria-pressed=true]{box-shadow:inset 0 0 0 2px var(--paper)}
+    .slot[aria-pressed=true]::after{content:" ✓";font-size:14px}
+    .week-controls{flex-shrink:0}.week-controls button{min-width:44px;min-height:44px}
+    .language button{min-height:40px}.service-name,.service-brief,.result p,.rail-summary strong{overflow-wrap:anywhere}
+    .result p{white-space:pre-wrap}.chapter-body,.schedule{min-width:0}.section-no{letter-spacing:0;overflow-wrap:anywhere}
+    .service button,.faq button{min-height:48px}.service-brief{flex:1}.service-name{min-width:0}
+    .form-heading{scroll-margin-top:20px}.field [aria-invalid=true]{border:2px solid #8A3434}
+    .chapter{border-left:1px solid var(--line);padding-left:16px}.hero h1{overflow-wrap:anywhere}
+    .footer .brand{font-size:23px}.footer-row{align-items:baseline}
+    @media(max-width:720px){.chapter{padding-left:12px}.schedule-head{align-items:flex-start}.schedule-head strong{overflow-wrap:anywhere;min-width:0}.hero{padding-bottom:24px}.rail{margin-bottom:20px}.rail nav{margin-bottom:12px}.day{min-height:215px}.footer .brand{font-size:19px}.service button{display:grid;grid-template-columns:28px minmax(0,1fr) 18px;gap:8px}.service-brief{display:block;grid-column:2;grid-row:2;margin:0}.service .expand-icon{grid-column:3;grid-row:1/3}.service-index{min-width:28px}.service-name{font-size:18px}.brand{gap:7px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main" data-zh="跳到主要內容" data-en="Skip to main content">跳到主要內容</a>
+  <header class="topbar"><div class="shell topbar-inner">
+    <a class="brand" href="#top" aria-label="安序 ANSHU 首頁" data-aria-label-zh="安序 ANSHU 首頁" data-aria-label-en="ANSHU home"><span>安序</span><span>ANSHU</span></a>
+    <div class="top-right"><a href="#services" data-zh="服務項目" data-en="Services">服務項目</a><a href="#process" data-zh="就診流程" data-en="Your visit">就診流程</a><a href="#booking" data-zh="選擇時段" data-en="Choose a time">選擇時段</a><div class="language" role="group" aria-label="語言選擇" data-aria-label-zh="語言選擇" data-aria-label-en="Choose language"><button type="button" data-language="zh" lang="zh-Hant" aria-label="切換為中文" data-aria-label-zh="切換為中文" data-aria-label-en="Switch to Chinese" aria-pressed="true">中</button><button type="button" data-language="en" lang="en" aria-label="切換為英文" data-aria-label-zh="切換為英文" data-aria-label-en="Switch to English" aria-pressed="false">EN</button></div></div>
+  </div></header>
+  <div class="shell layout" id="top">
+    <aside class="rail" aria-label="頁面索引與預約摘要" data-aria-label-zh="頁面索引與預約摘要" data-aria-label-en="Page index and appointment summary">
+      <div class="rail-kicker" data-zh="ANSHU / 初診指引" data-en="ANSHU / FIRST VISIT">ANSHU / 初診指引</div>
+      <nav aria-label="頁面導覽" data-aria-label-zh="頁面導覽" data-aria-label-en="Page navigation"><a href="#booking"><span data-zh="01　選時段" data-en="01　Choose a time">01　選時段</span></a><a href="#services"><span data-zh="02　服務項目" data-en="02　Services">02　服務項目</span></a><a href="#process"><span data-zh="03　就診流程" data-en="03　Your visit">03　就診流程</span></a><a href="#faq"><span data-zh="04　常見問題" data-en="04　Questions">04　常見問題</span></a></nav>
+      <div class="rail-summary" role="status" aria-live="polite"><p class="rail-title" data-zh="目前選擇" data-en="Your selection">目前選擇</p><strong id="selected-summary"></strong><p class="rail-note" data-zh="此頁僅供設計展示，並非診所預約系統。" data-en="Design demonstration only. This is not a clinic booking system.">此頁僅供設計展示，並非診所預約系統。</p></div>
+    </aside>
+    <main id="main" tabindex="-1">
+      <section class="hero" aria-labelledby="hero-title"><div class="hero-top"><span class="hero-mark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2v20M2 12h20" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="5" fill="var(--paper)" stroke="currentColor" stroke-width="1.7"/></svg><span data-zh="ANSHU / 復健診所" data-en="ANSHU / REHABILITATION">ANSHU / 復健診所</span></span><span class="eyebrow" data-zh="初診指引" data-en="First visit guide">初診指引</span></div><h1 id="hero-title" data-zh="一步一步，找回適合自己的節奏。" data-en="Find your way forward, one step at a time.">一步一步，找回適合自己的節奏。</h1><p data-zh="從了解服務、選擇時段，到準備第一次見面。安序用清楚的步驟，陪你開始。" data-en="Learn about our services, choose a time, and see what to prepare for a first visit. A clear path to getting started.">從了解服務、選擇時段，到準備第一次見面。安序用清楚的步驟，陪你開始。</p><div class="hero-actions"><a class="button-primary" href="#booking"><span data-zh="選擇時段" data-en="Choose a time">選擇時段</span><span aria-hidden="true">↗</span></a><span class="hero-meta" data-zh="此為虛構診所的互動示意頁" data-en="An interactive study for a fictional clinic">此為虛構診所的互動示意頁</span></div></section>
+      <section class="chapter" id="booking" aria-labelledby="booking-title"><span class="section-no" data-zh="01 / 預約" data-en="01 / BOOKING">01 / 預約</span><div class="chapter-body"><h2 id="booking-title" data-zh="選一個方便的時段。" data-en="Choose a time that works.">選一個方便的時段。</h2><p class="chapter-lead" data-zh="以下為示意週曆。選時段後填寫資料，即可在本頁預覽摘要；不會傳送、儲存或建立預約。" data-en="This is a sample weekly schedule. Choose a time and enter sample details to preview a summary on this page. Nothing is sent, saved, or booked.">以下為示意週曆。選時段後填寫資料，即可在本頁預覽摘要；不會傳送、儲存或建立預約。</p>
+        <div class="schedule"><div class="schedule-head"><strong id="week-label" aria-live="polite"></strong><div class="week-controls"><button id="prev-week" type="button" aria-label="上一週" data-aria-label-zh="上一週" data-aria-label-en="Previous week">‹</button><button id="next-week" type="button" aria-label="下一週" data-aria-label-zh="下一週" data-aria-label-en="Next week">›</button></div></div><div class="calendar-viewport" id="calendar-viewport" tabindex="0" role="region" aria-labelledby="week-label" aria-describedby="calendar-hint"><div class="calendar" id="calendar" role="group" aria-label="示意週時段" data-aria-label-zh="示意週時段" data-aria-label-en="Sample weekly time slots"></div></div></div><p id="calendar-hint" class="calendar-hint" data-zh="可查看本週及接下來兩週；週日無示意時段。窄螢幕可在週曆內左右捲動；可用 Tab 或方向鍵選時段，選取後可更改。" data-en="Browse this week and the next two weeks. No Sunday slots. On narrow screens, scroll within the week. Use Tab or arrow keys to reach a time; you can change your choice anytime.">可查看本週及接下來兩週；週日無示意時段。窄螢幕可在週曆內左右捲動；可用 Tab 或方向鍵選時段，選取後可更改。</p>
+        <noscript><p>此互動示意需要 JavaScript，未啟用時不會送出表單。 / JavaScript is required for this preview. The form cannot submit data.</p></noscript><form id="appointment-form" novalidate autocomplete="off" onsubmit="return false"><h3 class="form-heading" data-zh="填寫初診資料" data-en="First visit details">填寫初診資料</h3><div class="form-fields"><div class="field"><label for="visitor-name" data-zh="姓名" data-en="Name">姓名</label><input id="visitor-name" aria-describedby="name-note" autocomplete="off" maxlength="60" required><span id="name-note" class="field-note" data-zh="可填假資料，僅供畫面預覽。" data-en="Sample details are fine. Preview only.">可填假資料，僅供畫面預覽。</span></div><div class="field"><label for="visitor-phone" data-zh="電話" data-en="Phone">電話</label><input id="visitor-phone" aria-describedby="phone-note" type="tel" inputmode="tel" autocomplete="off" maxlength="30" required><span id="phone-note" class="field-note" data-zh="至少 6 位數字。" data-en="At least 6 digits.">至少 6 位數字。</span></div><div class="field wide"><label for="visitor-symptom" data-zh="想討論的狀況" data-en="What would you like to discuss?">想討論的狀況</label><textarea autocomplete="off" spellcheck="false" id="visitor-symptom" aria-describedby="symptom-note" maxlength="500" required></textarea><span id="symptom-note" class="field-note" data-zh="請勿在示意頁輸入真實敏感醫療資料。" data-en="Please avoid entering real sensitive medical details on this demo page.">請勿在示意頁輸入真實敏感醫療資料。</span></div></div><div class="form-footer"><button class="button-primary" type="submit"><span data-zh="顯示預約摘要" data-en="Preview appointment summary">顯示預約摘要</span><span aria-hidden="true">↗</span></button><button class="button-secondary" type="reset"><span data-zh="清除並重新開始" data-en="Clear and start again">清除並重新開始</span></button><p data-zh="只在目前畫面顯示；不傳送任何資料。" data-en="Shown on this page only. No data is sent.">只在目前畫面顯示；不傳送任何資料。</p></div><p class="form-error" id="form-error" role="alert" hidden></p></form>
+        <div class="result" id="result" role="region" tabindex="-1" aria-labelledby="result-title" hidden><h3 id="result-title" data-zh="預約摘要示意" data-en="Sample appointment summary">預約摘要示意</h3><p id="result-time"></p><p id="result-name"></p><p id="result-phone"></p><p id="result-symptom"></p><div class="prepared"><strong data-zh="到診準備事項" data-en="What to bring">到診準備事項</strong><ul><li data-zh="帶上可供識別的證件及既有相關檢查資料（若有）。" data-en="Bring identification and any relevant prior reports, if available.">帶上可供識別的證件及既有相關檢查資料（若有）。</li><li data-zh="穿著方便活動的衣物；如有疑問，可在正式就診前向診所確認。" data-en="Wear clothes that are easy to move in. Ask the real clinic if you have questions before a visit.">穿著方便活動的衣物；如有疑問，可在正式就診前向診所確認。</li><li data-zh="建議預留時間說明目前的狀況與期待。" data-en="Allow time to explain your current concerns and goals.">建議預留時間說明目前的狀況與期待。</li></ul><small data-zh="這是設計示意，沒有實際預約成立。" data-en="Design demonstration only. No appointment has been made.">這是設計示意，沒有實際預約成立。</small></div></div>
+      </div></section>
+      <section class="chapter" id="services" aria-labelledby="services-title"><span class="section-no" data-zh="02 / 服務" data-en="02 / SERVICES">02 / 服務</span><div class="chapter-body"><h2 id="services-title" data-zh="先認識可討論的方向。" data-en="Explore the services.">先認識可討論的方向。</h2><p class="chapter-lead" data-zh="以下為虛構診所的服務項目示例；實際評估方式與安排，應由合格專業人員依個別情況說明。" data-en="These are example services for a fictional clinic. A qualified professional would explain assessment and care for each individual.">以下為虛構診所的服務項目示例；實際評估方式與安排，應由合格專業人員依個別情況說明。</p><div class="service-list">
+        <div class="service"><button type="button" aria-expanded="false" aria-controls="service-1"><span class="service-index">01</span><span class="service-name" data-zh="初診動作評估" data-en="First visit movement assessment">初診動作評估</span><span class="service-brief" data-zh="從生活動作開始了解" data-en="Start with daily movement">從生活動作開始了解</span><span class="expand-icon" aria-hidden="true">+</span></button><div class="service-panel" id="service-1" hidden><p data-zh="透過對話與基本動作觀察，整理目前困擾、生活需求及後續可以討論的方向。" data-en="A conversation and simple movement observations help clarify current concerns, daily needs, and possible next steps.">透過對話與基本動作觀察，整理目前困擾、生活需求及後續可以討論的方向。</p></div></div>
+        <div class="service"><button type="button" aria-expanded="false" aria-controls="service-2"><span class="service-index">02</span><span class="service-name" data-zh="肌肉骨骼復健諮詢" data-en="Musculoskeletal rehabilitation consultation">肌肉骨骼復健諮詢</span><span class="service-brief" data-zh="釐清活動中的不便" data-en="Discuss movement concerns">釐清活動中的不便</span><span class="expand-icon" aria-hidden="true">+</span></button><div class="service-panel" id="service-2" hidden><p data-zh="討論活動時的不適與受限情境，協助理解可向醫療專業人員提出的問題。" data-en="Talk through discomfort or limitations during activity, and prepare questions for a medical professional.">討論活動時的不適與受限情境，協助理解可向醫療專業人員提出的問題。</p></div></div>
+        <div class="service"><button type="button" aria-expanded="false" aria-controls="service-3"><span class="service-index">03</span><span class="service-name" data-zh="運動與姿勢指引" data-en="Movement and posture guidance">運動與姿勢指引</span><span class="service-brief" data-zh="把建議帶回日常" data-en="Bring guidance into daily life">把建議帶回日常</span><span class="expand-icon" aria-hidden="true">+</span></button><div class="service-panel" id="service-3" hidden><p data-zh="依個別需求討論可行的日常活動與姿勢調整；內容需在正式評估後決定。" data-en="Discuss practical activity and posture adjustments based on individual needs, following a proper assessment.">依個別需求討論可行的日常活動與姿勢調整；內容需在正式評估後決定。</p></div></div>
+        <div class="service"><button type="button" aria-expanded="false" aria-controls="service-4"><span class="service-index">04</span><span class="service-name" data-zh="術後活動規劃諮詢" data-en="Post-surgery activity planning">術後活動規劃諮詢</span><span class="service-brief" data-zh="依醫囑討論活動安排" data-en="Plan around medical advice">依醫囑討論活動安排</span><span class="expand-icon" aria-hidden="true">+</span></button><div class="service-panel" id="service-4" hidden><p data-zh="配合原治療團隊的醫囑，討論不同階段的活動疑問與需留意的事項。" data-en="With guidance from the treating team, discuss activity questions and considerations at different stages.">配合原治療團隊的醫囑，討論不同階段的活動疑問與需留意的事項。</p></div></div>
+        <div class="service"><button type="button" aria-expanded="false" aria-controls="service-5"><span class="service-index">05</span><span class="service-name" data-zh="生活功能與回訪討論" data-en="Daily function and follow-up">生活功能與回訪討論</span><span class="service-brief" data-zh="記錄下一次的問題" data-en="Prepare for the next discussion">記錄下一次的問題</span><span class="expand-icon" aria-hidden="true">+</span></button><div class="service-panel" id="service-5" hidden><p data-zh="回顧日常活動的變化與尚未解決的疑問，整理下次見面時要討論的重點。" data-en="Review changes in everyday activities and unresolved questions to prepare for the next conversation.">回顧日常活動的變化與尚未解決的疑問，整理下次見面時要討論的重點。</p></div></div>
+      </div></div></section>
+      <section class="chapter" id="process" aria-labelledby="process-title"><span class="section-no" data-zh="03 / 就診" data-en="03 / VISIT">03 / 就診</span><div class="chapter-body"><h2 id="process-title" data-zh="第一次來，照著四步走。" data-en="Your first visit in four steps.">第一次來，照著四步走。</h2><p class="chapter-lead" data-zh="從提出問題到帶走下一步，先知道每個環節大致會發生什麼。" data-en="See what each step could involve, from sharing your concerns to planning what comes next.">從提出問題到帶走下一步，先知道每個環節大致會發生什麼。</p><ol class="steps"><li><span class="step-num" data-zh="第 01 步" data-en="STEP 01">第 01 步</span><h3 data-zh="選時段，整理問題" data-en="Choose a time and gather your questions">選時段，整理問題</h3><p data-zh="記下想討論的狀況，以及它對日常生活的影響。" data-en="Note what you would like to discuss and how it affects daily life.">記下想討論的狀況，以及它對日常生活的影響。</p></li><li><span class="step-num" data-zh="第 02 步" data-en="STEP 02">第 02 步</span><h3 data-zh="到診，說明需求" data-en="Arrive and share your needs">到診，說明需求</h3><p data-zh="由專業人員了解既往資訊與這次最在意的事。" data-en="A professional would ask about relevant history and your main concerns.">由專業人員了解既往資訊與這次最在意的事。</p></li><li><span class="step-num" data-zh="第 03 步" data-en="STEP 03">第 03 步</span><h3 data-zh="討論評估結果" data-en="Discuss the assessment">討論評估結果</h3><p data-zh="確認觀察到的情況，提出疑問，理解可能的後續安排。" data-en="Review observations, ask questions, and understand possible next steps.">確認觀察到的情況，提出疑問，理解可能的後續安排。</p></li><li><span class="step-num" data-zh="第 04 步" data-en="STEP 04">第 04 步</span><h3 data-zh="帶走清楚的下一步" data-en="Leave with clear next steps">帶走清楚的下一步</h3><p data-zh="記下需要留意的事項與回訪時想確認的問題。" data-en="Note any points to watch and questions to revisit later.">記下需要留意的事項與回訪時想確認的問題。</p></li></ol></div></section>
+      <section class="chapter" id="faq" aria-labelledby="faq-title"><span class="section-no" data-zh="04 / 問答" data-en="04 / FAQ">04 / 問答</span><div class="chapter-body"><h2 id="faq-title" data-zh="來之前，可能想知道。" data-en="Before you visit.">來之前，可能想知道。</h2><div class="faq"><div class="faq-item"><button type="button" aria-expanded="false" aria-controls="faq-1"><span data-zh="第一次就診需要準備什麼？" data-en="What should I prepare for a first visit?">第一次就診需要準備什麼？</span><span class="expand-icon" aria-hidden="true">+</span></button><div id="faq-1" class="faq-panel" hidden><p data-zh="可先整理主要疑問，帶上既有相關檢查資料（若有）。正式診所的實際要求請依其通知。" data-en="Prepare your main questions and bring relevant prior reports if you have them. Follow the real clinic's instructions for an actual visit.">可先整理主要疑問，帶上既有相關檢查資料（若有）。正式診所的實際要求請依其通知。</p></div></div><div class="faq-item"><button type="button" aria-expanded="false" aria-controls="faq-2"><span data-zh="可以更改剛才選的時段嗎？" data-en="Can I change the selected time?">可以更改剛才選的時段嗎？</span><span class="expand-icon" aria-hidden="true">+</span></button><div id="faq-2" class="faq-panel" hidden><p data-zh="可以。此示意頁可重新點選時段並更新摘要；沒有任何真實預約需要取消。" data-en="Yes. Select another sample slot and preview the updated summary. There is no real booking to cancel.">可以。此示意頁可重新點選時段並更新摘要；沒有任何真實預約需要取消。</p></div></div><div class="faq-item"><button type="button" aria-expanded="false" aria-controls="faq-3"><span data-zh="填寫資料後會有人聯絡我嗎？" data-en="Will someone contact me after I enter details?">填寫資料後會有人聯絡我嗎？</span><span class="expand-icon" aria-hidden="true">+</span></button><div id="faq-3" class="faq-panel" hidden><p data-zh="不會。資料只在目前畫面顯示；此頁不傳送、儲存資料，也不建立真實預約。" data-en="No. Details appear on this page only. Nothing is sent, saved, or booked.">不會。資料只在目前畫面顯示；此頁不傳送、儲存資料，也不建立真實預約。</p></div></div></div></div></section>
+    </main>
+  </div>
+  <footer class="footer"><div class="shell"><div class="footer-row"><a class="brand" href="#top" aria-label="安序 ANSHU 回到頁首" data-aria-label-zh="安序 ANSHU 回到頁首" data-aria-label-en="ANSHU, back to top"><span>安序</span><span>ANSHU</span></a><a href="../web.html" data-zh="← 返回 FORM³" data-en="← Back to FORM³">← 返回 FORM³</a></div><p data-zh="虛構品牌，非真實診所。頁面資訊與預約流程僅供設計示意。" data-en="Fictional brand, not a real clinic. All information and booking steps are for design demonstration only.">虛構品牌，非真實診所。頁面資訊與預約流程僅供設計示意。</p></div></footer>
+  <div class="demo-tag"><span data-zh="設計示意作品 · FORM³ Concept Demo（非真實品牌）" data-en="Design study · FORM³ Concept Demo (fictional brand)">設計示意作品 · FORM³ Concept Demo（非真實品牌）</span></div>
+  <script>
+    'use strict';
+    const $$=(s,r=document)=>Array.from(r.querySelectorAll(s));
+    const $=(s,r=document)=>r.querySelector(s);
+    const queryLang=new URLSearchParams(location.search).get('lang');
+    let language=queryLang==='en'?'en':'zh';
+    const tr=(zh,en)=>language==='en'?en:zh;
+    let weekIndex=0,selected=null,previewed=false,errorKey=null,errorField=null;
+    const start=new Date();start.setHours(12,0,0,0);start.setDate(start.getDate()-((start.getDay()+6)%7));
+    const weekDays={zh:['一','二','三','四','五','六','日'],en:['Mon','Tue','Wed','Thu','Fri','Sat','Sun']};
+    const pad=n=>String(n).padStart(2,'0');
+    const dateKey=d=>`${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+    const dateText=d=>language==='en'?new Intl.DateTimeFormat('en-US',{month:'short',day:'numeric',year:'numeric'}).format(d):`${d.getFullYear()} 年 ${d.getMonth()+1} 月 ${d.getDate()} 日`;
+    const fields=['name','phone','symptom'];
+    const errors={
+      slot:['請先從週曆選擇一個時段。','Choose a time from the schedule first.'],
+      name:['請填寫姓名（最多 60 字）。','Enter a name (up to 60 characters).'],
+      phone:['請填寫至少 6 位數字、最多 30 字的電話。','Enter a phone number with at least 6 digits and up to 30 characters.'],
+      symptom:['請填寫想討論的狀況（最多 500 字）。','Describe what you would like to discuss (up to 500 characters).']
+    };
+    function renderError(){
+      const error=$('#form-error');error.hidden=!errorKey;
+      error.textContent=errorKey?tr(...errors[errorKey]):'';
+      fields.forEach(key=>{
+        const field=$('#visitor-'+key),invalid=key===errorField;
+        field.setAttribute('aria-invalid',String(invalid));
+        field.setAttribute('aria-describedby',key+'-note'+(invalid?' form-error':''));
+      });
+      $('#calendar').setAttribute('aria-describedby','calendar-hint'+(errorKey==='slot'?' form-error':''));
+    }
+    function setLanguage(next){
+      language=next==='en'?'en':'zh';document.documentElement.lang=language==='en'?'en':'zh-Hant';
+      $$('[data-zh][data-en]').forEach(el=>el.textContent=el.dataset[language]);
+      for(const a of ['aria-label','alt','placeholder','title'])$$('[data-'+a+'-zh]').forEach(el=>el.setAttribute(a,el.getAttribute('data-'+a+'-'+language)));
+      $$('[data-language]').forEach(el=>el.setAttribute('aria-pressed',String(el.dataset.language===language)));
+      document.title=tr('安序 ANSHU｜復健診所預約流程示意','ANSHU | Rehabilitation clinic concept');
+      $('meta[name="description"]').content=tr('安序 ANSHU 復健診所虛構品牌示意頁：了解服務、選擇時段及預覽到診準備事項。','ANSHU fictional rehabilitation clinic concept: explore services, choose a sample time, and preview visit preparation.');
+      renderCalendar();renderSummary();renderError();if(previewed)renderResult();
+    }
+    function renderCalendar(){
+      const first=new Date(start);first.setDate(first.getDate()+weekIndex*7);
+      const last=new Date(first);last.setDate(last.getDate()+6);
+      $('#week-label').textContent=tr(`示意週曆　${dateText(first)} — ${dateText(last)}`,`Sample week　${dateText(first)} — ${dateText(last)}`);
+      $('#prev-week').disabled=weekIndex===0;$('#next-week').disabled=weekIndex===2;
+      const calendar=$('#calendar');calendar.replaceChildren();
+      for(let i=0;i<7;i++){
+        const date=new Date(first);date.setDate(date.getDate()+i);
+        const day=document.createElement('div');day.className='day';
+        const heading=document.createElement('h3');heading.className='day-heading';
+        const name=document.createElement('span');name.className='day-name';name.textContent=weekDays[language][i];
+        const dayNumber=document.createElement('span');dayNumber.className='day-date';dayNumber.textContent=pad(date.getDate());
+        heading.append(name,dayNumber);day.append(heading);
+        if(i===6){const closed=document.createElement('p');closed.className='closed';closed.textContent=tr('無示意時段','No sample slots');day.append(closed)}
+        else for(const time of (i===5?['09:30','11:00']:['09:30','14:00','16:00'])){
+          const button=document.createElement('button');button.type='button';button.className='slot';button.textContent=time;
+          button.dataset.day=String(i);button.dataset.time=time;button.dataset.key=dateKey(date);
+          button.setAttribute('aria-label',tr(`${dateText(date)} 週${weekDays.zh[i]} ${time}，選擇時段`,`${weekDays.en[i]}, ${dateText(date)} ${time}, choose time`));
+          button.setAttribute('aria-pressed',String(Boolean(selected&&selected.key===dateKey(date)&&selected.time===time)));
+          button.addEventListener('click',()=>{
+            selected={key:dateKey(date),time,date:new Date(date)};
+            $$('.slot').forEach(slot=>slot.setAttribute('aria-pressed',String(slot===button)));
+            if(errorKey==='slot'){errorKey=null;renderError()}
+            renderSummary();if(previewed)renderResult();
+          });
+          button.addEventListener('keydown',event=>moveSlot(event,button));
+          day.append(button);
+        }
+        calendar.append(day);
+      }
+    }
+    function moveSlot(event,button){
+      if(event.isComposing||event.altKey||event.ctrlKey||event.metaKey||event.shiftKey)return;
+      const keys=['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Home','End'];
+      if(!keys.includes(event.key))return;
+      event.preventDefault();
+      const slots=$$('.slot'),day=Number(button.dataset.day),today=slots.filter(s=>s.dataset.day===button.dataset.day);
+      let target;
+      if(event.key==='Home')target=today[0];
+      if(event.key==='End')target=today.at(-1);
+      if(event.key==='ArrowUp')target=today[Math.max(0,today.indexOf(button)-1)];
+      if(event.key==='ArrowDown')target=today[Math.min(today.length-1,today.indexOf(button)+1)];
+      if(event.key==='ArrowLeft'||event.key==='ArrowRight'){
+        const nextDay=Math.max(0,Math.min(5,day+(event.key==='ArrowLeft'?-1:1)));
+        const next=slots.filter(s=>Number(s.dataset.day)===nextDay);
+        target=next.find(s=>s.dataset.time===button.dataset.time)||next[Math.min(today.indexOf(button),next.length-1)];
+      }
+      target?.focus();
+    }
+    function renderSummary(){
+      $('#selected-summary').textContent=selected?`${dateText(selected.date)} · ${selected.time}`:tr('尚未選擇時段','No time selected');
+    }
+    function renderResult(){
+      if(!previewed||!selected)return;
+      $('#result-time').textContent=tr('示意時段：','Sample time: ')+`${dateText(selected.date)} · ${selected.time}`;
+      $('#result-name').textContent=tr('姓名：','Name: ')+$('#visitor-name').value.trim();
+      $('#result-phone').textContent=tr('電話：','Phone: ')+$('#visitor-phone').value.trim();
+      $('#result-symptom').textContent=tr('想討論的狀況：','What to discuss: ')+$('#visitor-symptom').value.trim();
+    }
+    function hideResult(){
+      previewed=false;$('#result').hidden=true;
+      for(const key of ['time',...fields])$('#result-'+key).textContent='';
+    }
+    function resetPreview(focus=true){
+      selected=null;weekIndex=0;errorKey=null;errorField=null;
+      fields.forEach(key=>$('#visitor-'+key).value='');
+      hideResult();renderCalendar();renderSummary();renderError();
+      if(focus)$('.slot')?.focus();
+    }
+    $$('[data-language]').forEach(button=>button.addEventListener('click',()=>setLanguage(button.dataset.language)));
+    for(const [id,delta] of [['prev-week',-1],['next-week',1]])$('#'+id).addEventListener('click',()=>{
+      weekIndex=Math.max(0,Math.min(2,weekIndex+delta));renderCalendar();
+      if($('#'+id).disabled)$('#'+(delta<0?'next-week':'prev-week')).focus();
+    });
+    $$('.service button,.faq button').forEach(button=>{
+      button.addEventListener('click',()=>{
+        const expanded=button.getAttribute('aria-expanded')==='true';
+        button.setAttribute('aria-expanded',String(!expanded));document.getElementById(button.getAttribute('aria-controls')).hidden=expanded;
+      });
+      button.addEventListener('keydown',event=>{
+        if(event.key==='Escape'&&button.getAttribute('aria-expanded')==='true'){
+          event.preventDefault();button.click();
+        }
+      });
+    });
+    $('#appointment-form').addEventListener('submit',event=>{
+      event.preventDefault();errorKey=null;errorField=null;hideResult();
+      const name=$('#visitor-name'),phone=$('#visitor-phone'),symptom=$('#visitor-symptom');
+      if(!selected)errorKey='slot';
+      else if(!name.value.trim()||name.value.length>60)errorKey=errorField='name';
+      else if(!/^[+()\d\s-]{6,30}$/.test(phone.value.trim())||(phone.value.match(/\d/g)||[]).length<6)errorKey=errorField='phone';
+      else if(!symptom.value.trim()||symptom.value.length>500)errorKey=errorField='symptom';
+      renderError();
+      if(errorKey){(errorField?$('#visitor-'+errorField):$('.slot')).focus();return}
+      previewed=true;renderResult();$('#result').hidden=false;$('#result').focus();
+    });
+    fields.forEach(key=>$('#visitor-'+key).addEventListener('input',()=>{
+      hideResult();errorKey=null;errorField=null;renderError();
+    }));
+    $('#appointment-form').addEventListener('reset',event=>{event.preventDefault();resetPreview()});
+    window.addEventListener('pagehide',()=>resetPreview(false));
+    setLanguage(language);
+  </script>
+</body>
+</html>
