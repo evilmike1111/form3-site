@@ -2247,3 +2247,22 @@ body #form3Music.needs-tap::before{animation:f3tip 2.4s ease-in-out 2,f3tipOut .
 @keyframes f3tipOut{to{opacity:0;visibility:hidden}}
 body:has(#psBar) #form3Music,body:has(#psBar) #form3QuickContact{bottom:84px!important}
 }
+
+/* FORM3-AUDIT-MOBILE (2026-11-24, owner picked A B D E G): quote rows, language button, footer links, small labels */
+@media(max-width:600px){
+.ps2 .ps-cards .ps-card ul li{grid-template-columns:minmax(0,1fr) auto!important;column-gap:10px!important;row-gap:6px!important;align-items:center!important}
+.ps2 .ps-cards .ps-card ul li .ps-name{grid-column:1!important;grid-row:1!important;white-space:nowrap!important}
+.ps2 .ps-cards .ps-card ul li b{grid-column:2!important;grid-row:1!important;text-align:right!important}
+.ps2 .ps-cards .ps-card ul li .ps-stp{grid-column:1/3!important;grid-row:2!important;justify-content:flex-end!important;padding-left:0!important}
+.ps2 .ps-cards .ps-card ul li .ps-ex{grid-column:1/3!important;grid-row:3!important}
+}
+@media(max-width:800px){
+.ps2 .ps-sw{white-space:nowrap!important}
+button.utility#languageToggle{font-size:14px!important}
+.footer-links a{display:inline-flex!important;align-items:center;min-height:44px}
+.about-skills-label{font-size:14px!important}.about-founder-copy .about-skills-label{font-size:14px!important}
+}
+
+/* FORM3-TAP-HIGHLIGHT (2026-11-24 owner: process page tap lights up a whole block): no blue block on content, soft mint on real controls */
+body,main,article,section,div,p,li,ul,ol,h1,h2,h3,h4,span,small,img,figure{-webkit-tap-highlight-color:transparent}
+a,button,summary,input,select,textarea,label,[role=button]{-webkit-tap-highlight-color:rgba(115,219,214,.22)}
