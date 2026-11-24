@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.izz-3d-randering.com/sitemap.xml
