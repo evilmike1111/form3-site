@@ -2263,6 +2263,6 @@ button.utility#languageToggle{font-size:14px!important}
 .about-skills-label{font-size:14px!important}.about-founder-copy .about-skills-label{font-size:14px!important}
 }
 
-/* FORM3-TAP-HIGHLIGHT (2026-11-24 owner: process page tap lights up a whole block): no blue block on content, soft mint on real controls */
+/* FORM3-TAP-HIGHLIGHT (2026-11-24 owner: process page tap lights up a whole block): no blue block on content, none anywhere, same as desktop */
 body,main,article,section,div,p,li,ul,ol,h1,h2,h3,h4,span,small,img,figure{-webkit-tap-highlight-color:transparent}
-a,button,summary,input,select,textarea,label,[role=button]{-webkit-tap-highlight-color:rgba(115,219,214,.22)}
+a,button,summary,input,select,textarea,label,[role=button]{-webkit-tap-highlight-color:transparent}
