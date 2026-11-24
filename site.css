@@ -2266,3 +2266,10 @@ button.utility#languageToggle{font-size:14px!important}
 /* FORM3-TAP-HIGHLIGHT (2026-11-24 owner: process page tap lights up a whole block): no blue block on content, none anywhere, same as desktop */
 body,main,article,section,div,p,li,ul,ol,h1,h2,h3,h4,span,small,img,figure{-webkit-tap-highlight-color:transparent}
 a,button,summary,input,select,textarea,label,[role=button]{-webkit-tap-highlight-color:transparent}
+
+/* FORM3-MUSIC-AXIS (2026-11-24 owner: start button on the centre axis): captions/lyrics chips float beside the prev-play-next trio so play sits on the cover's axis */
+@media(min-width:861px){
+#music-mv .mp2-ctl{position:relative}
+#music-mv .mp2-ctl .mp2-cc,#music-mv .mp2-ctl .mp2-lyr{position:absolute!important;top:50%!important;transform:translateY(-50%)!important;left:calc(50% + 118px)!important;margin:0!important}
+#music-mv .mp2-ctl .mp2-cc:not([hidden])~.mp2-lyr:not([hidden]){left:calc(50% + 118px + 76px)!important}
+}
