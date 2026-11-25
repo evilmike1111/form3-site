@@ -2285,3 +2285,6 @@ a,button,summary,input,select,textarea,label,[role=button]{-webkit-tap-highlight
 .emblem-steps li span{font-size:17px;color:#F2F6F5;font-weight:500}
 .emblem-steps li small{font-size:14px;line-height:1.5;color:#B0BDC2}
 .emblem-steps figcaption{margin-top:12px;font-size:14px;color:#7F9299}
+
+/* FORM3-EMBLEM-SHA (2026-11-25): download checksum line */
+.emblem-sha code{display:inline-block;max-width:100%;overflow-wrap:anywhere;word-break:break-all;font:13px/1.6 Consolas,monospace;color:#B0BDC2}
