@@ -2276,3 +2276,12 @@ a,button,summary,input,select,textarea,label,[role=button]{-webkit-tap-highlight
 
 /* FORM3-WORKS-TITLE-W100 (2026-11-24 owner: try weight 100): works page title + card titles in Noto Sans TC thin, upright */
 .works-editorial .works-masthead h1,.works-editorial .editorial-work .editorial-caption h2{font-family:'Noto Sans TC','Microsoft JhengHei',sans-serif!important;font-weight:100!important;font-style:normal!important}
+
+/* FORM3-EMBLEM-CARD (2026-11-24): EmblemForge card on the tools page, local only until owner confirms release */
+.emblem-steps{margin:0;display:flex;flex-direction:column;justify-content:center}
+.emblem-steps ol{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.emblem-steps li{display:grid;grid-template-columns:44px 1fr;column-gap:14px;row-gap:2px;padding:14px 16px;border:1px solid #2A3C43;border-radius:6px;background:#0b1519}
+.emblem-steps li b{grid-row:1/3;align-self:center;font:400 22px/1 Inter,'Noto Sans TC',sans-serif;color:#73DBD6;letter-spacing:.04em}
+.emblem-steps li span{font-size:17px;color:#F2F6F5;font-weight:500}
+.emblem-steps li small{font-size:14px;line-height:1.5;color:#B0BDC2}
+.emblem-steps figcaption{margin-top:12px;font-size:14px;color:#7F9299}
